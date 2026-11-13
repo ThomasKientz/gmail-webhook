@@ -1,0 +1,10 @@
+.git
+.github
+.gitignore
+node_modules
+test
+scripts
+tutorial.md
+README.md
+eslint.config.js
+.gcloudignore

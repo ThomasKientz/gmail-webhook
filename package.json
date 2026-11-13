@@ -1,0 +1,24 @@
+{
+  "name": "gmail-webhook",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Self-hosted Gmail to webhook bridge, deployed in the user's own Google Cloud project.",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "eslint .",
+    "check": "node --check index.js && node --check src/*.js && node --check test/*.test.js"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1"
+  }
+}
